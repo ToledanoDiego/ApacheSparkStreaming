@@ -1,0 +1,2 @@
+db.cl.find({"friendsCount": {$gte: 1000},"verb":{$regex:".*post.*"},"body":{$regex:".*Madrid.*"}}).count()
+185

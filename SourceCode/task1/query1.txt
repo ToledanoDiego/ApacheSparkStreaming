@@ -1,0 +1,7 @@
+db.cl.find({$and:[{"displayName":{$regex:/^A/,$options:'i'}},{"displayName":{$regex:/es$/}}],"friendsCount":{$lt:25}},{"displayName":1,"followersCount":1,"friendsCount":1}).sort({"displayName":-1})
+{ "_id" : ObjectId("605b0f0d64fb43dd4b4c6fb3"), "displayName" : "angie torres", "friendsCount" : 23, "followersCount" : 33 }
+{ "_id" : ObjectId("605b0f0d64fb43dd4b4c6fc3"), "displayName" : "angie torres", "friendsCount" : 23, "followersCount" : 33 }
+{ "_id" : ObjectId("605b0f0d64fb43dd4b4c9f34"), "displayName" : "Arizona Companies", "friendsCount" : 0, "followersCount" : 10 }
+{ "_id" : ObjectId("605b0f0d64fb43dd4b4c8f37"), "displayName" : "Adejies", "friendsCount" : 13, "followersCount" : 10 }
+{ "_id" : ObjectId("605b0f0d64fb43dd4b4c9f73"), "displayName" : "Adejies", "friendsCount" : 13, "followersCount" : 10 }
+{ "_id" : ObjectId("605b0f0e64fb43dd4b4ca47d"), "displayName" : "Adejies", "friendsCount" : 13, "followersCount" : 10 }

@@ -1,0 +1,2 @@
+db.cl.aggregate([{$group:{"_id":"_id", AverageRatio:{$avg: {$cond:{if:{$gt:["$followersCount", 0]}, then:{$divide:["$friendsCount","$followersCount"]} ,else: "$$REMOVE"}}}}}])
+{ "_id" : "_id", "AverageRatio" : 2.9499109542008175 }
