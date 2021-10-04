@@ -1,0 +1,2 @@
+select count(*) from (select user from logs where substr(time,7,2)>=21 and substr(time,7,2)<23 group by user) as user;
+69
